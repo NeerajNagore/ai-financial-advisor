@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-MoneyMentor — Your AI Money Mentor</title>
+  <meta name="description" content="AI-MoneyMentor — Your AI-Powered Financial Advisory Platform">
+</head>
+<body>
+  <script>
+    // Entry point: redirect based on auth state
+    if (localStorage.getItem('wp_token')) {
+      window.location.replace('dashboard.html');
+    } else {
+      window.location.replace('auth.html');
+    }
+  </script>
+</body>
+</html>
